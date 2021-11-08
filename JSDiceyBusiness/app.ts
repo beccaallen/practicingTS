@@ -1,12 +1,12 @@
-let dieHolder: any = document.querySelector(".dieHolder");
-let newButton: any = document.querySelector(".newDie");
-let rollButton: any = document.querySelector(".roll");
-let sumButton: any = document.querySelector(".sum");
-let dieArray:any = [];
-let counter: any = 0;
+let dieHolder= <HTMLDivElement> document.querySelector(".dieHolder");
+let newButton= <HTMLDivElement> document.querySelector(".newDie");
+let rollButton= <HTMLDataListElement> document.querySelector(".roll");
+let sumButton= <HTMLDivElement> document.querySelector(".sum");
+let dieArray:Array<Die> = [];
+let counter: any= 0;
 
 class Die {
-  div: any;
+  div: HTMLDivElement;
   value: any;
 
   constructor() {
